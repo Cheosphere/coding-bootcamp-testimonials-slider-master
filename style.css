@@ -1,0 +1,317 @@
+/* GENERAL STYLES */
+:root {
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CONTAINER STYLES */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 42.5%;
+    transition: all .35s ease-in-out;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: 800px;
+    padding: 0 10.3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all .35s ease-in-out;
+}
+
+/* CONTENT AREA STYLES */
+.content {
+    width: 58%;
+    height: 348px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position-x: 5.95rem;
+    z-index: 10;
+}
+
+.content_comment {
+    margin-top: 4rem;
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.75rem;
+    letter-spacing: .002rem;
+    color: var(--dark-blue);
+    order: -1;
+}
+
+.content_comment_user {
+    align-self: flex-end;
+    font-size: 1.25rem;
+    letter-spacing: .01rem;
+    position: relative;
+    bottom: .05rem;
+    color: var(--dark-blue);
+}
+
+.content_comment_user_position {
+    margin-left: .5rem;
+    font-weight: 300;
+    color: var(--grayish-blue);
+}
+
+/* PHOTO USER AREA STYLES */
+.user_image {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background-image: url(images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position-x: 4.05rem;
+    background-position-y: 3.1rem;
+}
+
+.user_image_photo {
+    width: 540px;
+    height: 540px;
+    margin: 0 2.15rem 2.1rem 0;
+    position: relative;
+    border-radius: .4rem;
+    background-image: url(images/image-tanya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1.2rem 2.2rem -.9rem rgba(43, 51, 94, 0.4);
+}
+
+.change_photo_user {
+    background-image: url(images/image-john.jpg);
+}
+
+.buttons {
+    width: 113px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -1.8rem;
+    left: 3.85rem;
+    border-radius: 57px;
+    background-color: white;
+    box-shadow: 0 1.2rem 2.5rem -.6rem rgba(43, 51, 94, 0.4);
+}
+
+.buttons_btn {
+    margin-top: .2rem;
+    z-index: 999;
+    transition: all .22s ease;
+}
+
+.buttons_btn:hover {
+    transform: scale(1.5);
+}
+
+.buttons_btn:active {
+    transform: scale(2);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1240px) {
+
+    .wrapper {
+        padding: 0 3.5rem;
+    }
+
+    .user_image_photo {
+        margin-right: -2rem;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+    .wrapper {
+        padding: 0 2.5rem;
+    }
+    
+    .content_comment {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+
+    .user_image_photo {
+        margin-right: -5rem;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    body {
+        min-height: 920px;
+    }
+
+    .container {
+        background-size: 50%;
+      }
+
+    .wrapper {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        justify-content: center;
+        background-position: top center;
+    }
+
+    .content_comment {
+        margin-top: 2rem;
+    }
+
+    .user_image {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 3rem;
+        padding: 3rem;
+        position: relative;
+        order: -1;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .user_image_photo {
+        width: 400px;
+        height: 400px;
+        margin: 0 0 2.1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .buttons {
+        position: relative;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        min-height: 800px;
+    }
+
+    .container {
+        background-size: 70%;
+      }
+
+    .wrapper {
+        padding: 0 1.5rem;
+    }
+
+    .content {
+        background-size: 20%;
+    }
+
+    .content_comment {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content_comment_user {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+    .content_comment_user_position {
+        margin: .3rem 0;
+    }
+
+    .user_image {
+        margin-bottom: 1rem;
+    }
+
+    .user_image_photo {
+        width: 360px;
+        height: 360px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    .wrapper {
+        padding: 0;
+    }
+
+    .content {
+        padding: 0 1.5rem;
+    }
+
+    .content_comment {
+        font-size: 1.15rem;
+        line-height: 1.8rem;
+    }
+
+    .user_image {
+        background-size: 95%;
+        padding: 4.6rem 0;
+    }
+
+    .user_image_photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .buttons {
+        transform: scale(.85);
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .user_image {
+        padding: 2.5rem 0;
+    }
+}
