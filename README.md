@@ -6,6 +6,8 @@ El desafío es desarrollar este componente deslizante de comentarios y lograr qu
 - CSS
 - JS Vanilla (with animejs library)
 
+![desktop-design-slide-1](https://user-images.githubusercontent.com/112582420/195675349-8257ea1c-9ff3-4c8c-bed4-aee7669beca6.jpg)
+
 # Guía de Estilo
 
 ## Diseño
