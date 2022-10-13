@@ -32,9 +32,8 @@ buttons.forEach(button => {
             targets: '.content_comment',
             opacity: {
                 value: [0, 1],
-                duration: 4000
+                duration: 6000
             },
-            translateY: [-150, 0],
             easing: 'easeOutExpo'
         });
         anime({
@@ -54,9 +53,12 @@ buttons.forEach(button => {
             opacity: {
                 value: [0, 1],
                 duration: 4000,
-                delay: 100
+                delay: 500
             },
-            translateY: [600, 0],
+            translateY: {
+                value: [-400, 0],
+                delay: 300
+            },
             easing: 'easeOutExpo'
         });
     })

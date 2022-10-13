@@ -135,7 +135,10 @@ body {
 
 .buttons_btn {
     margin-top: .2rem;
-    z-index: 999;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
     transition: all .22s ease;
 }
 
