@@ -32,7 +32,7 @@ buttons.forEach(button => {
             targets: '.content_comment',
             opacity: {
                 value: [0, 1],
-                duration: 6000
+                duration: 800
             },
             easing: 'easeOutExpo'
         });
@@ -40,11 +40,11 @@ buttons.forEach(button => {
             targets: '.user_image_photo',
             opacity: {
                 value: [0, 1],
-                duration: 1500
+                duration: 1000
             },
             scale: {
                 value: [0, 1],
-                duration: 1500
+                duration: 1000
             },
             easing: 'easeOutExpo'
         });
@@ -52,12 +52,12 @@ buttons.forEach(button => {
             targets: '.content_comment_user',
             opacity: {
                 value: [0, 1],
-                duration: 4000,
-                delay: 500
+                duration: 800,
+                delay: 200
             },
             translateY: {
-                value: [-400, 0],
-                delay: 300
+                value: [-150, 0],
+                delay: 100
             },
             easing: 'easeOutExpo'
         });

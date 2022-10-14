@@ -134,16 +134,18 @@ body {
 }
 
 .buttons_btn {
+    width: 40%;
+    height: 80%;
     margin-top: .2rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 10;
-    transition: all .22s ease;
+    transition: all .1s linear;
 }
 
 .buttons_btn:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 
 .buttons_btn:active {
