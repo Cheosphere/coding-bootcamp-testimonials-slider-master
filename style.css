@@ -316,7 +316,31 @@ body {
 
 @media screen and (max-width: 400px) {
 
+    body {
+        min-height: 667px;
+    }
+
+    .wrapper,
+    .container {
+        min-height: max-content;
+    }
+
+    .wrapper {
+        justify-content: flex-start;
+    }
+
     .user_image {
         padding: 2.5rem 0;
     }
+
+    .content_comment {
+        margin: 1.2rem 0;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .content_comment_user {
+        font-size: 1rem;
+    }
+
 }
