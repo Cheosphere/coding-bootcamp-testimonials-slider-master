@@ -325,10 +325,6 @@ body {
         min-height: max-content;
     }
 
-    .wrapper {
-        justify-content: flex-start;
-    }
-
     .user_image {
         padding: 2.5rem 0;
     }
